@@ -6,7 +6,7 @@
   //  mp4: "mp4/bg.mp4",
   //  poster: "img/bg-mobile-fallback.jpg"
   //  poster: "img/bg-chicago-sl-2.jpg"
-    poster: "img/nyc-central-park-crop-16x9.jpg"
+    poster: "img/nyc-central-park-crop-16x9-small.jpg"
   }, {
     posterType: 'jpg'
   });
