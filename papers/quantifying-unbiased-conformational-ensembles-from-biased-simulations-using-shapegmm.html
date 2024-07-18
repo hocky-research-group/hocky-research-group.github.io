@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <title>Quantifying Unbiased Conformational Ensembles from Biased Simulations Using ShapeGMM - Hocky Research Group</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="../papers/quantifying-unbiased-conformational-ensembles-from-biased-simulations-using-shapegmm.html">
+
+        <meta name="author" content="Subarna Sasmal, Triasha Pal, Glen M. Hocky*, and Martin McCullagh*" />
+        <meta name="description" content="Quantifying the conformational ensembles of biomolecules is fundamental to describing mechanisms of processes such as ligand binding and allosteric regulation. Accurate quantification of these ensembles remains a challenge for all but the simplest molecules. To overcome the ensemble sampling challenge, enhanced sampling approaches, such as metadynamics, have become widespread in …" />
+
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../theme/css/bootstrap.paper-nyu.min.css" type="text/css"/>
+    <link href="../theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="../theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="../theme/css/style.css" type="text/css"/>
+        <link href="../static/custom.css" rel="stylesheet">
+
+
+    <!-- Google analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-55745147-1', 'auto');
+    ga('send', 'pageview');
+    
+    </script> 
+
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="../" class="navbar-brand">
+Hocky Research Group            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+<li><a href="../members/glen.html"><i class="fa fa-user"></i><span class="icon-label">Glen</span></a></li><li><a href="../members/index.html"><i class="fa fa-users"></i><span class="icon-label">Group Members</span></a></li><li><a href="../publications/index.html"><i class="fa fa-th-list"></i><span class="icon-label">Publications</span></a></li><li><a href="../teaching/teaching.html"><i class="fa fa-book"></i><span class="icon-label">Teaching</span></a></li>            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="hidden-xs hidden-sm"><a href="http://as.nyu.edu/chemistry.html" target="_blank">NYU Chemistry</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="../papers/quantifying-unbiased-conformational-ensembles-from-biased-simulations-using-shapegmm.html"
+                       rel="bookmark"
+                       title="Permalink to Quantifying Unbiased Conformational Ensembles from Biased Simulations Using ShapeGMM">
+                        Quantifying Unbiased Conformational Ensembles from Biased Simulations Using ShapeGMM
+                    </a>
+                </h1>
+    <h4><a href="../members/subarna-sasmal.html"><em>Subarna Sasmal</em></a>, Triasha Pal, <b>Glen M. Hocky*</b>, and Martin McCullagh*</h4>
+    <h4>J. Chem. Theor. Comput., 20, 9, 3492–3502 (2024)</h4>
+
+    <br>
+        <p><i class="fa fa-calendar"></i> Published <time datetime="2024-04-02T00:00:00-04:00"> Apr 02 2024</time></p>
+        <p><i class="fa fa-file-text-o"></i> <a href="http://dx.doi.org/10.1021/acs.jctc.4c00223" target="_blank">Link to journal</a></p>
+        <p><i class="fa fa-file-text-o"></i> <a href="https://doi.org/10.1101/2024.01.22.576692" target="_blank">Link to bioRxiv</a></p>
+
+
+
+                </header>
+            <div class="entry-content">
+                <p>Quantifying the conformational ensembles of biomolecules is fundamental to describing mechanisms of processes such as ligand binding and allosteric regulation. Accurate quantification of these ensembles remains a challenge for all but the simplest molecules. To overcome the ensemble sampling challenge, enhanced sampling approaches, such as metadynamics, have become widespread in molecular simulation; however, the non-uniform frame weights that result from many of these approaches present an additional challenge to ensemble quantification techniques such as Markov State Modeling or structural clustering. Here, we present a rigorous inclusion of non-uniform frame weights into a structural clustering method entitled shapeGMM. The shapeGMM method fits a Gaussian mixture model to particle positions, and here we advance that approach by incorporating non-uniform frame weights in the estimates of all parameters of the model. The resulting models are high dimensional probability densities for the unbiased systems from which we can compute important thermodynamic properties such as relative free energies and configurational entropy. The accuracy of this approach is demonstrated by the quantitative agreement between GMMs computed by Hamiltonian reweighting and direct simulation of a coarse-grained helix model system. Furthermore, the relative free energy computed from a high dimensional probability density of alanine dipeptide reweighted from a metadynamics simulation quantitatively reproduces the metadynamics free energy in the basins. Finally, the method identifies hidden structures along the actin globular to filamentous-like structural transition from a metadynamics simulation on a linear discriminant analysis coordinate trained on GMM states, demonstrating the broad applicability of combining our prior and new methods, and illustrating how structural clustering of biased data can lead to biophysical insight. Combined, these results demonstrate that frame-weighted shapeGMM is a powerful approach to quantify biomolecular ensembles from biased simulations.</p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+    <ul class="list-inline">
+        <li class="pull-left">
+            <i class="fa fa-arrow-left"></i> <a href="../papers/crystal-clear-enabling-3d-real-space-analysis-of-ionic-colloidal-crystallization.html">
+                Newer
+            </a>
+        </li>
+        <li class="pull-right">
+            <a href="../papers/arp23-complex-and-formin-mediated-actin-cytoskeleton-networks-facilitate-actin-binding-protein-sorting-in-fission-yeast.html">
+                Older
+            </a> <i class="fa fa-arrow-right"></i>
+        </li>
+    </ul>
+
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+      <div class="row">
+         <div class="col-lg-4 col-xs-12">
+            <p>&copy; 2024 Glen Hocky &middot; <a href='&#109;a&#105;lto&#58;&#104;ock&#121;%&#54;7&#64;&#110;y&#117;&#46;%65&#37;64%75'>hocky&#103;&#64;n&#121;u&#46;&#101;du</a> </p>
+            <!-- Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a> -->         </div>
+         <div class="col-lg-6 col-xs-12">
+            <ul class="list-inline">
+              <li><a href="http://twitter.com/glenhocky" target="_blank">Twitter</a></li>
+              <li><a href="https://scholar.google.com/citations?user=tJMhlWMAAAAJ&hl=en&oi=ao"  target="_blank">Google Scholar</a></li>
+              <li><a href="https://github.com/hockyg"  target="_blank">Github</a></li>
+              <li><a href="https://github.com/hocky-research-group"  target="_blank">Group Github</a></li>
+              <li><a href="https://arxiv.org/a/hocky_g_1.html"  target="_blank">arXiv</a></li>
+              <li><a href="https://www.biorxiv.org/search/author1%3Aglen%2Bhocky%20jcode%3Abiorxiv%20numresults%3A10%20sort%3Arelevance-rank%20format_result%3Astandard"  target="_blank">bioRxiv</a></li>
+              <li><a href="https://chemrxiv.org/engage/chemrxiv/search-dashboard?authors=Glen%20M.%20Hocky" target="_blank">ChemRxiv</a></li>
+            </ul>
+         </div>
+         <div class="col-lg-2 col-xs-12">
+            <p class="pull-right-sm pull-left-xs"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p>
+         </div>
+      </div>
+      </div>
+   </div>
+</footer>
+<script src="../theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- <script src="../theme/js/bootstrap.min.js"></script> -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="../theme/js/respond.min.js"></script>
+
+    <!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0RVW5B3Z0V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0RVW5B3Z0V');
+</script>
+    <!-- End Google Analytics Code -->
+
+</body>
+</html>

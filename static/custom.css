@@ -1,0 +1,29 @@
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.entry-content {
+    text-align: justify;
+}
+
+.img-circle-border {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 200px;
+    box-sizing: border-box;
+    background-color: #DDD;
+    border: 5px solid #220337;
+}
+
+/*
+.navbar-default {
+  color: #57068c;
+  color: #000000;
+  background-image: none;
+  background-repeat: no-repeat;
+}
+*/
