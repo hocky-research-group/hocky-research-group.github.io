@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-    <title>Quantifying Unbiased Conformational Ensembles from Biased Simulations Using ShapeGMM - Hocky Research Group</title>
+    <title>Enabling three-dimensional real space analysis of ionic colloidal crystallization - Hocky Research Group</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -9,10 +9,10 @@
 
 
 
-<link rel="canonical" href="../papers/quantifying-unbiased-conformational-ensembles-from-biased-simulations-using-shapegmm.html">
+<link rel="canonical" href="../papers/enabling-three-dimensional-real-space-analysis-of-ionic-colloidal-crystallization.html">
 
-        <meta name="author" content="Subarna Sasmal, Triasha Pal, Glen M. Hocky*, and Martin McCullagh*" />
-        <meta name="description" content="Quantifying the conformational ensembles of biomolecules is fundamental to describing mechanisms of processes such as ligand binding and allosteric regulation. Accurate quantification of these ensembles remains a challenge for all but the simplest molecules. To overcome the ensemble sampling challenge, enhanced sampling approaches, such as metadynamics, have become widespread in …" />
+        <meta name="author" content="Shihao Zang, Adam W. Hauser, Sanjib Paul, Glen M. Hocky*, and Stefano Sacanna*" />
+        <meta name="description" content="Structures of molecular crystals are identified using scattering techniques because we cannot see inside them. Micrometre-sized colloidal particles enable the real-time observation of crystallization with optical microscopy, but in practice this is still hampered by a lack of ‘X-ray vision’. Here we introduce a system of index-matched fluorescently labelled colloidal …" />
 
 
 
@@ -72,37 +72,36 @@ Hocky Research Group            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="../papers/quantifying-unbiased-conformational-ensembles-from-biased-simulations-using-shapegmm.html"
+                    <a href="../papers/enabling-three-dimensional-real-space-analysis-of-ionic-colloidal-crystallization.html"
                        rel="bookmark"
-                       title="Permalink to Quantifying Unbiased Conformational Ensembles from Biased Simulations Using ShapeGMM">
-                        Quantifying Unbiased Conformational Ensembles from Biased Simulations Using ShapeGMM
+                       title="Permalink to Enabling three-dimensional real space analysis of ionic colloidal crystallization">
+                        Enabling three-dimensional real space analysis of ionic colloidal crystallization
                     </a>
                 </h1>
-    <h4><a href="../members/subarna-sasmal.html"><em>Subarna Sasmal</em></a>, Triasha Pal, <b>Glen M. Hocky*</b>, and Martin McCullagh*</h4>
-    <h4>J. Chem. Theor. Comput., 20, 9, 3492–3502 (2024)</h4>
+    <h4>Shihao Zang, Adam W. Hauser, <a href="../members/sanjib-paul.html"><em>Sanjib Paul</em></a>, <b>Glen M. Hocky*</b>, and Stefano Sacanna*</h4>
+    <h4>Nat. Mater., 23, 1131-1137 (2024)</h4>
 
     <br>
-        <p><i class="fa fa-calendar"></i> Published <time datetime="2024-04-02T00:00:00-04:00"> Apr 02 2024</time></p>
-        <p><i class="fa fa-file-text-o"></i> <a href="http://dx.doi.org/10.1021/acs.jctc.4c00223" target="_blank">Link to journal</a></p>
-        <p><i class="fa fa-file-text-o"></i> <a href="https://doi.org/10.1101/2024.01.22.576692" target="_blank">Link to bioRxiv</a></p>
-
+        <p><i class="fa fa-calendar"></i> Published <time datetime="2024-06-03T00:00:00-04:00"> Jun 03 2024</time></p>
+        <p><i class="fa fa-file-text-o"></i> <a href="http://dx.doi.org/10.1038/s41563-024-01917-w" target="_blank">Link to journal</a></p>
+<br /><b>Research Highlight:</b> Theodore Hueckel and Robert J. Macfarlane, <em>Illuminating defects in crystal clear colloidal assemblies</em>, <a href="https://www.nature.com/articles/s41563-024-01956-3">Nat. Mater. 23, 1023-1024 (2024)</a><br /><b>NYU press release: </b><a href="https://www.nyu.edu/about/news-publications/news/2024/june/x-ray-vision-crystal-clear.html">Scientists Develop X-Ray Vision Technique to See Inside Crystals</a>
 
 
                 </header>
             <div class="entry-content">
-                <p>Quantifying the conformational ensembles of biomolecules is fundamental to describing mechanisms of processes such as ligand binding and allosteric regulation. Accurate quantification of these ensembles remains a challenge for all but the simplest molecules. To overcome the ensemble sampling challenge, enhanced sampling approaches, such as metadynamics, have become widespread in molecular simulation; however, the non-uniform frame weights that result from many of these approaches present an additional challenge to ensemble quantification techniques such as Markov State Modeling or structural clustering. Here, we present a rigorous inclusion of non-uniform frame weights into a structural clustering method entitled shapeGMM. The shapeGMM method fits a Gaussian mixture model to particle positions, and here we advance that approach by incorporating non-uniform frame weights in the estimates of all parameters of the model. The resulting models are high dimensional probability densities for the unbiased systems from which we can compute important thermodynamic properties such as relative free energies and configurational entropy. The accuracy of this approach is demonstrated by the quantitative agreement between GMMs computed by Hamiltonian reweighting and direct simulation of a coarse-grained helix model system. Furthermore, the relative free energy computed from a high dimensional probability density of alanine dipeptide reweighted from a metadynamics simulation quantitatively reproduces the metadynamics free energy in the basins. Finally, the method identifies hidden structures along the actin globular to filamentous-like structural transition from a metadynamics simulation on a linear discriminant analysis coordinate trained on GMM states, demonstrating the broad applicability of combining our prior and new methods, and illustrating how structural clustering of biased data can lead to biophysical insight. Combined, these results demonstrate that frame-weighted shapeGMM is a powerful approach to quantify biomolecular ensembles from biased simulations.</p>
+                <p>Structures of molecular crystals are identified using scattering techniques because we cannot see inside them. Micrometre-sized colloidal particles enable the real-time observation of crystallization with optical microscopy, but in practice this is still hampered by a lack of ‘X-ray vision’. Here we introduce a system of index-matched fluorescently labelled colloidal particles and demonstrate the robust formation of ionic crystals in aqueous solution, with structures that can be controlled by size ratio and salt concentration. Full three-dimensional coordinates of particles are distinguished through in situ confocal microscopy, and the crystal structures are identified via comparison of their simulated scattering pattern with known atomic arrangements. Finally, we leverage our ability to look inside colloidal crystals to observe the motion of defects and crystal melting in time and space and to reveal the origin of crystal twinning. Using this platform, the path to real-time analysis of ionic colloidal crystallization is now ‘crystal clear’.</p>
             </div>
             <!-- /.entry-content -->
         </article>
     </section>
     <ul class="list-inline">
         <li class="pull-left">
-            <i class="fa fa-arrow-left"></i> <a href="../papers/enabling-three-dimensional-real-space-analysis-of-ionic-colloidal-crystallization.html">
+            <i class="fa fa-arrow-left"></i> <a href="../papers/good-rates-from-bad-coordinates-the-exponential-average-time-dependent-rate-approach.html">
                 Newer
             </a>
         </li>
         <li class="pull-right">
-            <a href="../papers/arp23-complex-and-formin-mediated-actin-cytoskeleton-networks-facilitate-actin-binding-protein-sorting-in-fission-yeast.html">
+            <a href="../papers/quantifying-unbiased-conformational-ensembles-from-biased-simulations-using-shapegmm.html">
                 Older
             </a> <i class="fa fa-arrow-right"></i>
         </li>
