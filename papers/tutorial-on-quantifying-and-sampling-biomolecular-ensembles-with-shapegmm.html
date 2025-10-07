@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-    <title>Improved data-driven collective variables for biased sampling through iteration on biased data - Hocky Research Group</title>
+    <title>Tutorial on quantifying and sampling biomolecular ensembles with ShapeGMM - Hocky Research Group</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -9,10 +9,10 @@
 
 
 
-<link rel="canonical" href="../papers/improved-data-driven-collective-variables-for-biased-sampling-through-iteration-on-biased-data.html">
+<link rel="canonical" href="../papers/tutorial-on-quantifying-and-sampling-biomolecular-ensembles-with-shapegmm.html">
 
-        <meta name="author" content="Subarna Sasmal, Martin McCullagh*, and Glen M. Hocky*" />
-        <meta name="description" content="Our ability to efficiently sample conformational transitions between two known states of a biomolecule using collective variable (CV)-based sampling depends strongly on the choice of the CV. We previously reported a data-driven approach to clustering biomolecular configurations with a probabilistic clustering model termed shapeGMM. ShapeGMM is a Gaussian mixture …" />
+        <meta name="author" content="Subarna Sasmal, Martin McCullagh, and Glen M. Hocky" />
+        <meta name="description" content="Here we present a detailed workflow for clustering and enhanced sampling of biomolecular conformations using the ShapeGMM methodology. This approach fits a probabilistic model of biomolecular conformations rooted in the idea that the free energy can expressed in terms of local fluctuations in atomic positions around metastable states. We demonstrate …" />
 
 
 
@@ -72,38 +72,30 @@ Hocky Research Group            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="../papers/improved-data-driven-collective-variables-for-biased-sampling-through-iteration-on-biased-data.html"
+                    <a href="../papers/tutorial-on-quantifying-and-sampling-biomolecular-ensembles-with-shapegmm.html"
                        rel="bookmark"
-                       title="Permalink to Improved data-driven collective variables for biased sampling through iteration on biased data">
-                        Improved data-driven collective variables for biased sampling through iteration on biased data
+                       title="Permalink to Tutorial on quantifying and sampling biomolecular ensembles with ShapeGMM">
+                        Tutorial on quantifying and sampling biomolecular ensembles with ShapeGMM
                     </a>
                 </h1>
-    <h4><a href="../members/subarna-sasmal.html"><em>Subarna Sasmal</em></a>, Martin McCullagh*, and <b>Glen M. Hocky*</b></h4>
-    <h4>J. Phys. Chem. B, 129, 25, 6163-6171 (2025)</h4>
+    <h4><a href="../members/subarna-sasmal.html"><em>Subarna Sasmal</em></a>, Martin McCullagh, and <b>Glen M. Hocky</b></h4>
+    <h4>Submitetd, bioRxiv:2025.10.06.680711 (2025)</h4>
 
     <br>
-        <p><i class="fa fa-calendar"></i> Published <time datetime="2025-06-12T00:00:00-04:00"> Jun 12 2025</time></p>
-        <p><i class="fa fa-file-text-o"></i> <a href="http://dx.doi.org/10.1021/acs.jpcb.5c02164" target="_blank">Link to journal</a></p>
-        <p><i class="fa fa-file-text-o"></i> <a href="https://doi.org/10.1101/2025.03.25.644418" target="_blank">Link to bioRxiv</a></p>
-        <p><i class="fa fa-file-text-o"></i> <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=tJMhlWMAAAAJ&sortby=pubdate&citation_for_view=tJMhlWMAAAAJ:-7ulzOJl1JYC" target="_blank">Citations on Google Scholar</a></p>
+        <p><i class="fa fa-file-text-o"></i> <a href="https://doi.org/10.1101/2025.10.06.680711" target="_blank">Link to bioRxiv</a></p>
 
 
 
                 </header>
             <div class="entry-content">
-                <p>Our ability to efficiently sample conformational transitions between two known states of a biomolecule using collective variable (CV)-based sampling depends strongly on the choice of the CV. We previously reported a data-driven approach to clustering biomolecular configurations with a probabilistic clustering model termed shapeGMM. ShapeGMM is a Gaussian mixture model in Cartesian coordinates, with means and covariances in each cluster representing the harmonic approximation to the conformational ensemble around a metastable state. We subsequently showed that linear discriminant analysis on positions (posLDA) produces good reaction coordinates to characterize the transition between two of these states, and moreover, they can be biased to produce transitions between the states using metadynamics-like approaches. However, the quality of these posLDA coordinates depends on the amount of data used to characterize the states, and here, we demonstrate the ability to systematically improve them using enhanced sampling data. Specifically, we demonstrate that improved CVs for sampling can be generated by iteratively performing biased sampling along a posLDA coordinate and then generating a new shapeGMM model from biased data from the previous iteration. The new coordinates derived from our iterative approach show a substantial improvement in being able to induce transitions between metastable states and to converge a free energy surface.</p>
+                <p>Here we present a detailed workflow for clustering and enhanced sampling of biomolecular conformations using the ShapeGMM methodology. This approach fits a probabilistic model of biomolecular conformations rooted in the idea that the free energy can expressed in terms of local fluctuations in atomic positions around metastable states. We demonstrate using a single model system how to generate and fit equilibrium molecular dynamics simulation data. We then show how to use the resulting model to generate a reaction coordinate between two states, how to sample along that coordinate using Metadynamics using our size-and-shape PLUMED module, and how to cluster those biased conformations to give a refined equilibrium ShapeGMM model.</p>
             </div>
             <!-- /.entry-content -->
         </article>
     </section>
     <ul class="list-inline">
-        <li class="pull-left">
-            <i class="fa fa-arrow-left"></i> <a href="../papers/light-controlled-colloidal-crystallization.html">
-                Newer
-            </a>
-        </li>
         <li class="pull-right">
-            <a href="../papers/a-direct-computational-assessment-of-vinculin-actin-unbinding-kinetics-reveals-catch-bonding-behavior.html">
+            <a href="../papers/using-time-dependent-rate-analysis-to-evaluate-the-quality-of-machine-learned-reaction-coordinates-for-biasing-and-computing-kinetics.html">
                 Older
             </a> <i class="fa fa-arrow-right"></i>
         </li>
