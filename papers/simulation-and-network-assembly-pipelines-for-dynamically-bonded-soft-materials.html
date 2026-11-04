@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <title>Simulation and Network Assembly Pipelines for Dynamically Bonded Soft Materials - Hocky Research Group</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="../papers/simulation-and-network-assembly-pipelines-for-dynamically-bonded-soft-materials.html">
+
+        <meta name="author" content="Tanner A. Wilcoxson, Tianhao Li, Tyla R. Holoman, Gaurav Mitra, Thomas M. Truskett*, and Glen M. Hocky*" />
+        <meta name="description" content="Soft materials linked by reversible covalent or supramolecular bonds form a diverse class of assemblies with promising applications from nanoscience to medicine. Experiments typically probe bulk phase behavior and rheology, but it remains difficult to measure how microscopic bonding kinetics and the mechanics of the constituent elements give rise to …" />
+
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../theme/css/bootstrap.paper-nyu.min.css" type="text/css"/>
+    <link href="../theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="../theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="../theme/css/style.css" type="text/css"/>
+        <link href="../static/custom.css" rel="stylesheet">
+
+
+    <!-- Google analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-55745147-1', 'auto');
+    ga('send', 'pageview');
+    
+    </script> 
+
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="../" class="navbar-brand">
+Hocky Research Group            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+<li><a href="../members/glen.html"><i class="fa fa-user"></i><span class="icon-label">Glen</span></a></li><li><a href="../members/index.html"><i class="fa fa-users"></i><span class="icon-label">Group Members</span></a></li><li><a href="../publications/index.html"><i class="fa fa-th-list"></i><span class="icon-label">Publications</span></a></li><li><a href="../teaching/teaching.html"><i class="fa fa-book"></i><span class="icon-label">Teaching</span></a></li><li><a href="../resources.html"><i class="fa fa-database"></i><span class="icon-label">Resources</span></a></li>            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="hidden-xs hidden-sm"><a href="http://as.nyu.edu/chemistry.html" target="_blank">NYU Chemistry</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="../papers/simulation-and-network-assembly-pipelines-for-dynamically-bonded-soft-materials.html"
+                       rel="bookmark"
+                       title="Permalink to Simulation and Network Assembly Pipelines for Dynamically Bonded Soft Materials">
+                        Simulation and Network Assembly Pipelines for Dynamically Bonded Soft Materials
+                    </a>
+                </h1>
+    <h4>Tanner A. Wilcoxson, <a href="../members/tianhao-li.html"><em>Tianhao Li</em></a>, Tyla R. Holoman, <a href="../members/gaurav-mitra.html"><em>Gaurav Mitra</em></a>, Thomas M. Truskett*, and <b>Glen M. Hocky*</b></h4>
+    <h4>arXiv:2609.21204 (2026)</h4>
+
+    <br>
+        <p><i class="fa fa-calendar"></i> Posted <time datetime="2026-09-18T00:00:00-04:00"> Sep 18 2026</time></p>
+        <p><i class="fa fa-file-text-o"></i> <a href="http://arxiv.org/abs/2609.21204" target="_blank">Link to arXiv</a></p>
+
+
+
+                </header>
+            <div class="entry-content">
+                <p>Soft materials linked by reversible covalent or supramolecular bonds form a diverse class of assemblies with promising applications from nanoscience to medicine. Experiments typically probe bulk phase behavior and rheology, but it remains difficult to measure how microscopic bonding kinetics and the mechanics of the constituent elements give rise to bulk properties. Coarse-grained molecular dynamics (MD) simulations can bridge these scales, but most simulation approaches do not control individual bond kinetics, and those that do were mostly developed for bespoke applications that do not readily generalize. Here we present pySNAP (Simulation and Network Assembly Pipelines), a modular open source Python platform that integrates tunable dynamic bonding with a workflow, template, and analysis setup, so that users can study a wide range of systems with only small changes to input files. The platform is built on the GPU-accelerated HOOMD-blue MD engine and integrates DyBond, a GPU-accelerated plugin that forms and breaks bonds consistent with an equilibrium distribution and supports bonding between multiple types of partner species. Around this core, the snap_simulate package compiles a directory of parameter files into a HOOMD-blue simulation, and the snap_workflow package orchestrates the resulting parameter sweeps across workstations and high-performance computing schedulers. We describe the theory behind simulated dynamic bonding and how to use the package, from setting up a parameter sweep to analyzing its results, and demonstrate the framework on a diverse range of dynamically bonded systems, showing that it accommodates distinct interaction mechanisms, geometries, and physical scenarios within a unified workflow, while enabling both reproduction of existing models and rapid construction of more complex composite systems.</p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+    <ul class="list-inline">
+        <li class="pull-left">
+            <i class="fa fa-arrow-left"></i> <a href="../papers/flexible-simulation-framework-for-polymer-attenuated-coulombic-self-assembly.html">
+                Newer
+            </a>
+        </li>
+        <li class="pull-right">
+            <a href="../papers/self-assembly-of-colloidal-diamond-via-the-depletion-interaction.html">
+                Older
+            </a> <i class="fa fa-arrow-right"></i>
+        </li>
+    </ul>
+
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+      <div class="row">
+         <div class="col-lg-4 col-xs-12">
+            <p>&copy; 2026 Glen Hocky &middot; <a href='&#109;a&#105;lto&#58;&#104;ock&#121;%&#54;7&#64;&#110;y&#117;&#46;%65&#37;64%75'>hocky&#103;&#64;n&#121;u&#46;&#101;du</a> </p>
+            <!-- Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a> -->         </div>
+         <div class="col-lg-6 col-xs-12">
+            <ul class="list-inline">
+              <li><a href="https://www.linkedin.com/in/glen-m-hocky" target="_blank">LinkedIn</a></li>
+              <li><a href="https://scholar.google.com/citations?user=tJMhlWMAAAAJ&hl=en&oi=ao"  target="_blank">Google Scholar</a></li>
+              <li><a href="https://github.com/hockyg"  target="_blank">Github</a></li>
+              <li><a href="https://github.com/hocky-research-group"  target="_blank">Group Github</a></li>
+              <li><a href="https://arxiv.org/a/hocky_g_1.html"  target="_blank">arXiv</a></li>
+              <li><a href="https://www.biorxiv.org/search/author1%3Aglen%2Bhocky%20jcode%3Abiorxiv%20numresults%3A10%20sort%3Arelevance-rank%20format_result%3Astandard"  target="_blank">bioRxiv</a></li>
+              <li><a href="https://chemrxiv.org/authored-by/Hocky/Glen+M." target="_blank">ChemRxiv</a></li>
+            </ul>
+         </div>
+         <div class="col-lg-2 col-xs-12">
+            <p class="pull-right-sm pull-left-xs"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p>
+         </div>
+      </div>
+      </div>
+   </div>
+</footer>
+<script src="../theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- <script src="../theme/js/bootstrap.min.js"></script> -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="../theme/js/respond.min.js"></script>
+
+    <!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0RVW5B3Z0V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0RVW5B3Z0V');
+</script>
+    <!-- End Google Analytics Code -->
+
+</body>
+</html>
