@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <title>Efficient strategies for obtaining accurate kinetics from biased simulations - Hocky Research Group</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="../papers/efficient-strategies-for-obtaining-accurate-kinetics-from-biased-simulations.html">
+
+        <meta name="author" content="Triasha Pal, Nicodemo Mazzaferro, Pilar Cossio, and Glen M. Hocky" />
+        <meta name="description" content="It has been demonstrated that one can recover the unbiased rate constants for slow conformational transitions by observing transitions driven by a bias potential added along one or several collective variables (CVs). However, the choice of CV, biasing scheme, biasing parameters and the rate estimator can all affect the results …" />
+
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../theme/css/bootstrap.paper-nyu.min.css" type="text/css"/>
+    <link href="../theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="../theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="../theme/css/style.css" type="text/css"/>
+        <link href="../static/custom.css" rel="stylesheet">
+
+
+    <!-- Google analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-55745147-1', 'auto');
+    ga('send', 'pageview');
+    
+    </script> 
+
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="../" class="navbar-brand">
+Hocky Research Group            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+<li><a href="../members/glen.html"><i class="fa fa-user"></i><span class="icon-label">Glen</span></a></li><li><a href="../members/index.html"><i class="fa fa-users"></i><span class="icon-label">Group Members</span></a></li><li><a href="../publications/index.html"><i class="fa fa-th-list"></i><span class="icon-label">Publications</span></a></li><li><a href="../teaching/teaching.html"><i class="fa fa-book"></i><span class="icon-label">Teaching</span></a></li><li><a href="../resources.html"><i class="fa fa-database"></i><span class="icon-label">Resources</span></a></li>            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="hidden-xs hidden-sm"><a href="http://as.nyu.edu/chemistry.html" target="_blank">NYU Chemistry</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="../papers/efficient-strategies-for-obtaining-accurate-kinetics-from-biased-simulations.html"
+                       rel="bookmark"
+                       title="Permalink to Efficient strategies for obtaining accurate kinetics from biased simulations">
+                        Efficient strategies for obtaining accurate kinetics from biased simulations
+                    </a>
+                </h1>
+    <h4><a href="../members/triasha-pal.html"><em>Triasha Pal</em></a>, <a href="../members/nicodemo-mazzaferro.html"><em>Nicodemo Mazzaferro</em></a>, Pilar Cossio, and <b>Glen M. Hocky</b></h4>
+    <h4>arXiv:2611.22137 (2026)</h4>
+
+    <br>
+        <p><i class="fa fa-calendar"></i> Posted <time datetime="2026-11-18T00:00:00-05:00"> Nov 18 2026</time></p>
+        <p><i class="fa fa-file-text-o"></i> <a href="http://arxiv.org/abs/2611.22137" target="_blank">Link to arXiv</a></p>
+
+
+
+                </header>
+            <div class="entry-content">
+                <p>It has been demonstrated that one can recover the unbiased rate constants for slow conformational transitions by observing transitions driven by a bias potential added along one or several collective variables (CVs). However, the choice of CV, biasing scheme, biasing parameters and the rate estimator can all affect the results and it is not obvious which to choose for a given problem. In this study, we compare accuracy versus computational cost for a previously established benchmark system, a coarse-grained protein with computationally accessible unfolding kinetics. We apply bias to four CVs of decreasing quality in both a time-dependent and quasi-static manner, and compare different estimators for the unfolding rate constant in terms of absolute accuracy to the estimated reference unbiased rate.  We show that in the case of gentle biasing, the exponential average time-dependent rate (EATR) framework, which simultaneously fits the unbiased rate constant and a coordinate quality metric $\gamma$, recovers accurate kinetics in nearly all cases. For poor CVs, estimators equivalent to assuming a good coordinate ($\gamma=1$) systematically fail regardless of biasing method or parameters. We introduce heuristics to show when we expect the rates to be inaccurate, and identify which combinations of biasing scheme, estimator and number of runs reach a given accuracy at the lowest cost.</p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+    <ul class="list-inline">
+        <li class="pull-right">
+            <a href="../papers/sampling-free-energy-landscapes-of-ionic-colloidal-crystal-systems-using-machine-learned-proxy-collective-variables.html">
+                Older
+            </a> <i class="fa fa-arrow-right"></i>
+        </li>
+    </ul>
+
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+      <div class="row">
+         <div class="col-lg-4 col-xs-12">
+            <p>&copy; 2026 Glen Hocky &middot; <a href='&#109;a&#105;lto&#58;&#104;ock&#121;%&#54;7&#64;&#110;y&#117;&#46;%65&#37;64%75'>hocky&#103;&#64;n&#121;u&#46;&#101;du</a> </p>
+            <!-- Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a> -->         </div>
+         <div class="col-lg-6 col-xs-12">
+            <ul class="list-inline">
+              <li><a href="https://www.linkedin.com/in/glen-m-hocky" target="_blank">LinkedIn</a></li>
+              <li><a href="https://scholar.google.com/citations?user=tJMhlWMAAAAJ&hl=en&oi=ao"  target="_blank">Google Scholar</a></li>
+              <li><a href="https://github.com/hockyg"  target="_blank">Github</a></li>
+              <li><a href="https://github.com/hocky-research-group"  target="_blank">Group Github</a></li>
+              <li><a href="https://arxiv.org/a/hocky_g_1.html"  target="_blank">arXiv</a></li>
+              <li><a href="https://www.biorxiv.org/search/author1%3Aglen%2Bhocky%20jcode%3Abiorxiv%20numresults%3A10%20sort%3Arelevance-rank%20format_result%3Astandard"  target="_blank">bioRxiv</a></li>
+              <li><a href="https://chemrxiv.org/authored-by/Hocky/Glen+M." target="_blank">ChemRxiv</a></li>
+            </ul>
+         </div>
+         <div class="col-lg-2 col-xs-12">
+            <p class="pull-right-sm pull-left-xs"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p>
+         </div>
+      </div>
+      </div>
+   </div>
+</footer>
+<script src="../theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- <script src="../theme/js/bootstrap.min.js"></script> -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="../theme/js/respond.min.js"></script>
+
+    <!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0RVW5B3Z0V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0RVW5B3Z0V');
+</script>
+    <!-- End Google Analytics Code -->
+
+</body>
+</html>
